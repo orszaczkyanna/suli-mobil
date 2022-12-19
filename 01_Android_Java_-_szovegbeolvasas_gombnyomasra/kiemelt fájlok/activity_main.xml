@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <!-- Szövegbevitel -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextInput"
+        android:hint="Írd be a szöveget"
+        android:textAlignment="center"/>
+
+    <!-- Gomb a szöveg elküldéséhez -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSubmit"
+        android:layout_below="@id/editTextInput"
+        android:text="Küldés"/>
+
+    <!-- A szöveg megjelenítése -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewResult"
+        android:layout_below="@id/buttonSubmit"
+        android:textAlignment="center"
+        android:textSize="26sp"/>
+
+</RelativeLayout>
+
+<!--
+  Attribútumok
+
+  android:layout_width="match_parent"
+    → A szélesség kitölti a szülő (pl. képernyő) teljes szélességét
+
+  android:layout_height="wrap_content"
+    → A magasság akkora lesz, amekkora a tartalomnak kell (nem fix)
+
+  android:id="@+id/..."
+    → Egyedi azonosító, amin keresztül a Java kódból is hivatkozható
+
+  android:layout_below="@id/..."
+    → Ez az elem a megadott ID-jű elem alatt jelenik meg
+
+  android:text="..."
+    → A komponensben megjelenő szöveg (pl. gombfelirat)
+
+  android:hint="..."
+    → Segédszöveg/placeholder, ami csak akkor látszik, ha még nincs beírva semmi
+
+  android:textAlignment="center"
+    → A szöveg vízszintesen középre lesz igazítva a komponensen belül
+
+  android:gravity="center"
+    → A komponens minden belső tartalma (nem csak szöveg) vízszintesen és függőlegesen is középre kerül (ha van rá hely)
+
+  android:textSize="26sp"
+    → A betűméretet adja meg (scalable pixels, azaz méretezhető szöveg)
+-->
