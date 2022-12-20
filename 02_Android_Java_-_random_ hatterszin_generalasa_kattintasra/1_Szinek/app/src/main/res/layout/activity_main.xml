@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/layout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hatterSzin"
+        android:layout_centerInParent="true"
+        android:text="(0,0,0)"
+        android:textSize="30sp"/>
+
+</RelativeLayout>
+
+<!--
+  Megjegyzések:
+
+  android:id="@+id/layout"
+    → A teljes képernyőt lefedő gyökérelem (RelativeLayout) kap egy azonosítót,
+    hogy Java kódból módosítható legyen a háttérszíne vagy eseményt lehessen hozzárendelni
+
+  android:layout_centerInParent="true"
+    → A TextView vízszintesen és függőlegesen is a szülő (RelativeLayout) közepére kerül
+-->
