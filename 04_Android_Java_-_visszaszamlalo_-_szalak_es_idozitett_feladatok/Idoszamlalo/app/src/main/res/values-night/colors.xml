@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Sötét módban használt szín a visszaszámlálóhoz -->
+    <color name="time_color">#FAE19D</color>
+</resources>
